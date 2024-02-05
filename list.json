@@ -12,7 +12,7 @@
     {
         "label": "Bologna: foglio 87 / Istituto geografico militare",
         "startDate": "1850",
-        "endDate": None,
+        "endDate": "None",
         "url": "data/images/BO211_MAP1206_I_R.jpg", 
         "coordinateN": 44.66095543140633, 
         "coordinateE": 10.96560301176323, 
