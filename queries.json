@@ -1,0 +1,9 @@
+{
+    "endpoint": "https://dati.cultura.gov.it/sparql",
+    "queries": {
+      "CPcoordinates" : "SELECT DISTINCT(?institute) ?instituteLabel ?lat ?long WHERE {?CP a ?o; a-loc:hasCulturalInstituteOrSite ?institute. ?institute rdfs:label ?instituteLabel. ?CP clvapit:hasGeometry ?geometry. ?geometry a-loc:hasCoordinates ?coordinates. ?coordinates a-loc:lat ?lat. ?coordinates a-loc:long ?long. }",
+      
+      "CPInterval": "SELECT DISTINCT(?CP) ?interval WHERE { ?CP a ?o; a-loc:hasCulturalInstituteOrSite ?institute clvapit:hasGeometry ?geometry; a-cd:hasDating ?obj. ?obj a-cd:hasDatingEvent ?event. ?event a-cd:specificTime ?timeInterval. ?timeInterval rdfs:label ?interval}"
+    }
+
+}
